@@ -42,3 +42,104 @@
 .search-form::-webkit-input-placeholder {
     color: #BFBFBF;
 }
+
+.data-container {
+    height: 385px;
+    margin-top: 55px;
+    background: #F5F5F5;
+    border-radius: 8px;
+    padding-left: 30px;
+}
+
+.profile-data {
+    display: flex;
+}
+
+.profile-photo {
+    padding-top: 23px;
+}
+
+.profile-photo-style {
+    width: 284px;
+    height: 280px;
+}
+
+.profile-info {
+    padding-top: 24px;
+    padding-left: 45px;
+}
+
+.repo-info {
+    display: flex;
+    height: 23px;
+}
+
+.repo-info-style {
+    margin-right: 10px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+.repo-text {
+    padding-left: 14px;
+    padding-right: 15px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #595959;
+}
+
+.personal-info {
+    height: 247px;
+    width: 870px;
+    margin-top: 12px;
+    padding-left: 15px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.info-text {
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #1890FF;
+    margin-bottom: 20px;
+}
+
+.info-container {
+    height: 40px;
+    margin-left: 14px;
+    margin-right: 17px;
+    margin-bottom: 5px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.info-row {
+    height: 100%;
+    padding-left: 10px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #737373;
+}
+
+.row-label {
+    font-weight: bold;
+}
+
+.profile-git {
+    padding-top: 18px;
+}
