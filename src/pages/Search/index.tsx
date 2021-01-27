@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import dayjs from 'dayjs'
+import dayjs from 'dayjs';
+import br from "dayjs/locale/br";
 import Button from '../../core/components/Button';
 import { UserResponse } from '../../core/types/User';
 import ImageLoader from './Loaders/ImageLoader';
@@ -19,7 +20,7 @@ const Search = () => {
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-
+        
         setShowInfo(true);
         setIsLoading(true);
         axios(`https://api.github.com/users/${user}`)
@@ -28,6 +29,8 @@ const Search = () => {
             setIsLoading(false);
         })
     }
+
+    const dateCreatedAt = dayjs(userResponse?.created_at).locale('br').format("DD/MM/YYYY");
 
     return (
         <div className="search-container">
@@ -104,7 +107,7 @@ const Search = () => {
                                     <div className="info-container">
                                         <span className="info-row">
                                             <span className="row-label">Membro desde:&nbsp;</span> 
-                                            {userResponse?.created_at}
+                                            {dateCreatedAt}
                                         </span>
                                     </div>
                                 </div>
